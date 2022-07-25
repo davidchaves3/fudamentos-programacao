@@ -1,5 +1,5 @@
 programa
-{    
+{    
      /* EXERCÍCIO - ANALISANDO IDADES */
 	
 	funcao inicio()
@@ -45,7 +45,7 @@ programa
 			c++
 		}
 		 escreva("\n===================================================\n")
-		 escreva("A pessoa mais jovem é ", jovem ," que tem ", novo , "anos \n")
+		 escreva("A pessoa mais jovem é ", jovem ," que tem ", novo , " anos \n")
 		 escreva("A pessoa mais mais velha  é ", velha ," que tem " , velho , " anos")	
 		
 		
@@ -56,7 +56,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 55; 
+ * @POSICAO-CURSOR = 792; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
