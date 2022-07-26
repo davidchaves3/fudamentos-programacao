@@ -7,7 +7,7 @@ programa
 	funcao inicio()
 	{    
 	     // Variáveis
-		inteiro id = 0, soma = 0 , c = 1
+		inteiro id = 0, soma = 0 , c = 1 , maior = 0
 		real med
 
 		escreva("{ EXERCÍCIO - Lendo Dados } \n")
@@ -25,6 +25,9 @@ programa
 			se( id!= 9999){
 				c++
 			}
+			se( id > maior e id != 9999){
+				maior = id
+			}
 
 			
 		}
@@ -37,7 +40,9 @@ programa
 		u.aguarde(500)
 		escreva("Ao todo você digitou " + (c-1) + " valores \n")
 		escreva("A soma entre eles foi " + soma + "\n")
-		escreva("E a média foi " + m.arredondar(med,2))
+		escreva("E a média foi " + m.arredondar(med,2)  + "\n")
+		escreva("O maior valor digitado foi " + maior)
+		
 		
 	}
 }
@@ -46,7 +51,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 718; 
+ * @POSICAO-CURSOR = 572; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
