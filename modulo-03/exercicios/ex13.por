@@ -1,11 +1,11 @@
 programa
 {
 	inclua biblioteca Matematica --> m
-	inclua biblioteca Tipos --> t
+	inclua biblioteca Tipos --> t
 	
 	funcao inicio()
 	{
-		inteiro idade, c = 1, soma = 0 , maior = 0 , menor = 0
+		inteiro idade, c = 0, soma = 0 , maior = 0 , menor = 0
 		cadeia nome, amigoV = "" , amigoN =""
 		real med
 
@@ -14,6 +14,12 @@ programa
 			escreva("OBS: Digite ACABOU no nome para parar \n")
 			escreva("Nome: ")
 			leia(nome)
+			se( nome == "ACABOU" ou nome =="acabou"){
+				escreva("\n********INTERROMPIDO***********\n")
+				pare
+				
+			}
+			
 			escreva("Idade: ")
 			leia(idade)
 
@@ -35,10 +41,6 @@ programa
 					amigoN = nome
 				}
 			}
-
-			se( nome == "ACABOU" ou nome =="acabou" ){
-				pare
-			}
 		}
 
 		med = t.inteiro_para_real(soma)/t.inteiro_para_real(c)
@@ -56,7 +58,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 759; 
+ * @POSICAO-CURSOR = 122; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
