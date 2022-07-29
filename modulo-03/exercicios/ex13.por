@@ -1,5 +1,6 @@
 programa
 {
+	inclua biblioteca Texto --> txt
 	inclua biblioteca Matematica --> m
 	inclua biblioteca Tipos --> t
 	
@@ -7,14 +8,14 @@ programa
 	{
 		inteiro idade, c = 0, soma = 0 , maior = 0 , menor = 0
 		cadeia nome, amigoV = "" , amigoN =""
-		real med
+		real med = 0.0
 
 		enquanto(verdadeiro){
 			escreva("\n--------------------- NOVO AMIGO --------------------------\n")
 			escreva("OBS: Digite ACABOU no nome para parar \n")
 			escreva("Nome: ")
 			leia(nome)
-			se( nome == "ACABOU" ou nome =="acabou"){
+			se( txt.caixa_alta(nome) == "ACABOU" ){
 				escreva("\n********INTERROMPIDO***********\n")
 				pare
 				
@@ -58,7 +59,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 122; 
+ * @POSICAO-CURSOR = 246; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
